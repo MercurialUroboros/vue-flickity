@@ -1,7 +1,7 @@
 {
   "name": "vue-flickity-2",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -22,5 +22,10 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
-  }
+  },
+  "main": "./src/components/Flickity.vye",
+  "files": [
+    "src/*",
+    "!.eslintrc.js"
+  ]
 }
