@@ -5,7 +5,6 @@ module.exports = {
   },
   plugins: ['es-beautifier'],
   'extends': [
-    'plugin:es-beautifier/standard',
     'plugin:vue/essential',
     '@vue/standard'
   ],
