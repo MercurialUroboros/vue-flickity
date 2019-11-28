@@ -3,7 +3,6 @@ module.exports = {
   env: {
     node: true
   },
-  plugins: ['es-beautifier'],
   'extends': [
     'plugin:vue/essential',
     '@vue/standard'
