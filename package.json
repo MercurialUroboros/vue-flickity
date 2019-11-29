@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.3.2",
-    "eslint-plugin-es-beautifier": "^1.0.1",
     "flickity": "^2.2.1",
     "vue": "^2.6.10"
   },
@@ -23,9 +22,9 @@
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
   },
-  "main": "src/components/Flickity.vue",
+  "main": "src/",
   "files": [
     "src/*",
-    "!.eslintrc.js"
+    "!./.eslintrc.js"
   ]
 }
