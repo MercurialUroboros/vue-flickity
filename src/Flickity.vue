@@ -29,7 +29,19 @@ export default {
         on: this.mountFlickityEvents(),
         ...this.options
       })
+      this.initliazeFlickityApi()
       this.$emit('init', { flickityApi: this.api })
+    },
+    mountFlickityEvents () {
+      const callBacks = {}
+      Object.keys(this.$listeners).forEach(listener => {
+        callBacks[listener] = (...args) => {
+          this.$emit(listener, ...args)
+        }
+      })
+      return callBacks
+    },
+    initliazeFlickityApi () {
       const prototype = Object.getPrototypeOf(this.flickity)
       for (const p in prototype) {
         if (p.includes('_')) continue
@@ -37,15 +49,14 @@ export default {
           this.flickity[p](args)
         }
       }
+      this.api.off = this.off
+      this.api.once = this.once
     },
-    mountFlickityEvents () {
-      const callBacks = {}
-      Object.keys(this.$listeners).forEach((listener) => {
-        callBacks[listener] = (...args) => {
-          this.$emit(listener, args)
-        }
-      })
-      return callBacks
+    off (listener) {
+      this.flickity.off(listener)
+    },
+    once (listener, cb) {
+      this.flickity.once(listener, cb)
     }
   }
 }
