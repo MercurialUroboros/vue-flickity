@@ -1,6 +1,8 @@
 # Vue Flickity 2
 
-A vue flickity version more in linea with Vue patterns.
+A vue flickity version more in line with Vue patterns. 
+
+This project is a work in progress.
 
 ## Installation
 
