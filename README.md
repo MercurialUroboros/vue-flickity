@@ -21,20 +21,16 @@ npm install vue-flickity-2
       :options="flickityOptions"
       ref="flickity"
       @dragMove="dragMove"
-      @next="next"
       @init="api=$event.flickityApi"
     >
-      <div
-        class="carousel-cell"
-        a="1"
-      >1</div>
+      <div class="carousel-cell">1</div>
       <div class="carousel-cell">2</div>
       <div class="carousel-cell">3</div>
       <div class="carousel-cell">4</div>
       <div class="carousel-cell">5</div>
     </flickity>
-    <button @click="previous()">Custom Previous Button</button>
-    <button @click="next()">Custom Next Button</button>
+    <button @click="previous()">Previous Button</button>
+    <button @click="next()">Next Button</button>
   </div>
 </template>
 
