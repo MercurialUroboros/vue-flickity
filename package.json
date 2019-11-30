@@ -1,6 +1,6 @@
 {
   "name": "vue-flickity-2",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": false,
   "scripts": {
     "lint": "vue-cli-service lint",
