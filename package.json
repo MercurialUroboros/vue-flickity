@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "lint": "vue-cli-service lint",
-    "deploy": "vue-cli-service build --target lib --name myLib ./src/Flickity.vue"
+    "deploy": "vue-cli-service build --target lib --name vue-flickity-2 ./src/Flickity.vue"
   },
   "dependencies": {
     "flickity": "^2.2.1"
@@ -21,8 +21,9 @@
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
-  "main": "dist/myLib.umd.js",
+  "main": "dist/vue-flickity-2.umd.js",
   "files": [
     "dist/*"
-  ]
+  ],
+  "homepage": "https://github.com/CristianoSoleti/-vue-flickity"
 }
